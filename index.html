@@ -3,9 +3,9 @@
 
   <body style=
   "font-family: Andale Mono, monospace;
-  background-image: url(./images/lemon\ _os_backround.png);
-  background-repeat: no-repeat;
-  background-size: 970px 900px;">
+  background-color: #0072F7;
+   background-image: url(./images/New\ Piskel\ \(1\).png); 
+   background-size: 100vh;  ">
 
     <div style=
     "border: solid #EEFF00; 
@@ -43,7 +43,13 @@
      7/19/2026 1:24 PM
       </p>
       <script>
+
+        function updateTime() {
         var currentTime = new Date().toLocaleString();
+        var timeElement = document.querySelector("#timeElement")
+        timeElement.innerHTML = currentTime;
+      }
+      setInterval(updateTime, 1000);
       </script>
 
 
